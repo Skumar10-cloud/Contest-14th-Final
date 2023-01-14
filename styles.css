@@ -1,11 +1,11 @@
 *{
     
     top: 0px;
-    background-color: black;
+    background-color: black
 }
 
 .side-bar{
-    position: absolute;
+    position: fixed;
 width: 333px;
 height: 620px;
 left: 21px;
@@ -32,6 +32,8 @@ background-color: rgba(59, 54, 54, 0.699);
     height: 36px;
     left: 115px;
     top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -118,9 +120,11 @@ background-color: rgba(59, 54, 54, 0.699);
 .left-bar1 h5{
     position: relative;
     color: white;
+    font-family: 'Poppins';
+    font-style: normal;
     background-color: rgba(41, 38, 38, 0.699);
     height: 2px;
-    top: 3px;
+    top: -3px;
     left: 50px;
     font-size: 20px;
     width: 200px;
@@ -163,12 +167,16 @@ background-color: rgba(59, 54, 54, 0.699);
 
 
 .left-bar2{
+    box-sizing: border-box;
     position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
     width: 950px;
     height: 260px;
     top: 380px;
     left: 380px;
     background-color: rgba(59, 54, 54, 0.699);
+    /* background: #262626; */
     border-radius: 50px;
    }
 
@@ -178,59 +186,64 @@ background-color: rgba(59, 54, 54, 0.699);
     color: white;
     background-color: rgba(41, 38, 38, 0.699);
     height: 2px;
-    top: 2px;
+    top: -20px;
     left: 50px;
     font-size: 20px;
     width: 200px;
 }
 
  table{
+    box-sizing: border-box;
     position: absolute;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     background-color: rgba(41, 38, 38, 0.699);
     height: 150px;
-    top: 85px;
+    top: 60px;
     width: 850px;
     left: 50px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    
-}
- 
-
-thead{
-    height: 30px;
+    border-radius: 20px;
     color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.5);
     
 }
-th{
-    position: relative;
-    background-color: rgba(59, 54, 54, 0.699);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+
+#th_1,#th_2,#th_3{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 30px;
     border-collapse: collapse;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(59, 54, 54, 0.699);
 }
-#th_2{
-    text-align: left;
-    left: 20px;
+#th_4{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 30px;
+    border-collapse: collapse;
+    background-color: rgba(59, 54, 54, 0.699);
 }
-#th_3{
-    text-align: left;
-    left: 20px;
+
+td{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    padding-left: 10px;
+    border-bottom: none;
+    border-top: none;
+    background-color: rgba(59, 54, 54, 0.699);
    
 }
-td{
-    background-color: rgba(59, 54, 54, 0.699);
-    text-align: left;
-    color: rgba(255, 255, 255, 0.5);
-    border-bottom-right-radius: 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+td:last-child, th:last-child {
+    border-right: none;
+    border-bottom: none;
 }
-.td{
-    text-align: center;
+thead th:last-child{
+    border-top-right-radius: 15px;
 }
-#td{
-    left: 50px;
+thead th:first-child{
+    border-top-left-radius: 15px;
 }
-table tr:last-child td:last-child{
-    border-radius: 10px;
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 15px;
 }
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 15px;
+}
+
